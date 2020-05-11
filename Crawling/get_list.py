@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 
 def getLists(string)
     bsObj = BeautifulSoup(string, "html.parser")
+
     print(bsObj)
     return []
 
