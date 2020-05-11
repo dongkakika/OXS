@@ -1,9 +1,9 @@
-from urllib.parse import quote_plus
+from urllib.request import urlopen
 from bs4 import BeautifulSoup
-from selenium import webdriver
 
-Url = "https://www.chungbuk.ac.kr/site/www/boardList.do?boardSeq=113&key=699"
-print(Url)
+html = urlopen("http://www.naver.com")
 
-driver = webdriver.Chrome()
-driver.get(Url)
+bsObject = BeautifulSoup(html, "html.parser")
+
+
+print(bsObject) # 웹 문서 전체가 출력됩니다.
