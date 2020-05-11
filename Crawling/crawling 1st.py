@@ -12,9 +12,7 @@ driver.get(url)
 html = driver.page_source
 soup = BeautifulSoup(html)
 
-subject = soup.select('.subject')
-for i in subject:
-    print(i.a.attrs)
-    print()
+subject = soup.select(".subject")
+print(subject)
 
 driver.close()
