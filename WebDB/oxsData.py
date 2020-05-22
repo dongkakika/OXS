@@ -26,7 +26,7 @@ f.close()
 ################################################################################
 
 
-# below 'print' is for checking the data structure. y' don't need to delete it.
+# below 'print' is for checking the data structure. U don't need to delete it.
 print("saved data(1) : ", list[0][0]) 
 print("saved data(2) : ", list[1])
 
@@ -42,6 +42,8 @@ while idx < len(list):
 	cur.execute("INSERT INTO Crawlingdata VALUES(?, ?);", list[idx])
 	# 'INSERT' each value of a list.
 	idx += 1
+	
+con.commit() # The new input is gonna be saved in the DB with 'commit' command
 
 idx = 0
 
