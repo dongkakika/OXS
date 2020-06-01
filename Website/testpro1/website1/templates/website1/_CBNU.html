@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-{% load static %}
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
@@ -128,10 +127,11 @@
                        <div class="left">
                        </div>
                        <div class="right">
-                     <p style="text-align:right;"> <span style="font-family: Jua; font-size: 1.5em; line-height:300%;">
-                        <span class="board_dot small">[ 총 게시물  12613 개 ]</span>
-                          </span>
-                           </p>
+                     <p style="text-align:right;"><span style="font-family: Jua; font-size: 1.5em; line-height:300%;">
+                        <div style = "padding: 0px 0px 0px 300px;">
+                        <span class="board_dot small">[ 총 게시물  12613 개 ]</span></span></p>
+                  </div>
+                     </span>
                        </div>
              </div>
       <form name="chkBoxForm" method="post" action="./selectDelete.do" onsubmit="return boardDataRemove()">
@@ -147,25 +147,25 @@
          <input type="hidden" name="searchKeyword" value="">
          <input type="hidden" name="MemberTYPE" value="">
 <style>
-table {text-align:center; line-height:300%; font-size: 0.9em;},
-tr {text-align:center;line-height:300%;font-size: 0.9em;},
-th {text-align:center;line-height:300%;font-size: 0.9em;},
-td{text-align:center;line-height:300%;font-size: 0.9em;}
-
+table tr, th, td{
+text-align:center;
+line-height:300%;
+font-size: 1.0em;
+}
 </style>
-         <table style="margin-left: auto; margin-right: auto;" class="basic" border="0" summary="공지사항_공지사항 게시물이며  제목, 작성자, 파일, 조회수, 작성일등의 정보를 제공합니다.">
+         <div style = "padding: 0px 300px 0px 300px;">
+         <table style="margin-left: auto; margin-right: auto;" class="table table-striped" border="0" summary="공지사항_공지사항 게시물이며  제목, 작성자, 파일, 조회수, 작성일등의 정보를 제공합니다.">
 
          <thead class="th list">
-         <tr>
+         <tr class="success">
             <th scope="col" width="100px" class="first">번호</th>
-            <th scope="col" width="800px">제목</th>
-            <th scope="col" width="150px">작성자</th>
+            <th scope="col" width="600px">제목</th>
+            <th scope="col" width="180px">작성자</th>
             <th scope="col" width="100px">파일</th>
-            <th scope="col" width="100px">조회수</th>
-            <th scope="col" width="150px" class="last">작성일</th>
+            <th scope="col" width="80px">조회수</th>
+            <th scope="col" width="80px" class="last">작성일</th>
          </tr>
          </thead>
-
          <tbody class="tb">
                <tr>
                <td><em>공지</em></td>
@@ -176,7 +176,7 @@ td{text-align:center;line-height:300%;font-size: 0.9em;}
                         </td>
                <td>국제교류본부</td>
                         <td>
-                                 <a href="./boardDownload.do?boardSeq=112&amp;post=3183756&amp;bdfiles=323989&amp;key=698"><img src="images/next.png" width="40" height="25" alt="변경"></a>
+                                 <a href="./boardDownload.do?boardSeq=112&amp;post=3183756&amp;bdfiles=323989&amp;key=698"></a>
                         </td>
                <td>290</td>
                <td>2020.04.28</td>
@@ -220,6 +220,124 @@ td{text-align:center;line-height:300%;font-size: 0.9em;}
                   <td>조회수</td>
                   <td>게시날짜</td>
                </tr>
+               <tr>
+                  <td>게시번호</td>
+                  <td class="subject" style="padding-left:0px;">
+                     <a href="./boardView.do?post=3183572&amp;page=2&amp;boardSeq=112&amp;key=698">
+                        여기에는 장학금이름
+                     </a>
+                  </td>
+                  <td>어디서올렷나</td>
+                  <td>파일</td>
+                  <td>조회수</td>
+                  <td>게시날짜</td>
+               </tr>
+               <tr>
+                  <td>게시번호</td>
+                  <td class="subject" style="padding-left:0px;">
+                     <a href="./boardView.do?post=3183572&amp;page=2&amp;boardSeq=112&amp;key=698">
+                        여기에는 장학금이름
+                     </a>
+                  </td>
+                  <td>어디서올렷나</td>
+                  <td>파일</td>
+                  <td>조회수</td>
+                  <td>게시날짜</td>
+               </tr>
+               <tr>
+                  <td>게시번호</td>
+                  <td class="subject" style="padding-left:0px;">
+                     <a href="./boardView.do?post=3183572&amp;page=2&amp;boardSeq=112&amp;key=698">
+                        여기에는 장학금이름
+                     </a>
+                  </td>
+                  <td>어디서올렷나</td>
+                  <td>파일</td>
+                  <td>조회수</td>
+                  <td>게시날짜</td>
+               </tr>
+               <tr>
+                  <td>게시번호</td>
+                  <td class="subject" style="padding-left:0px;">
+                     <a href="./boardView.do?post=3183572&amp;page=2&amp;boardSeq=112&amp;key=698">
+                        여기에는 장학금이름
+                     </a>
+                  </td>
+                  <td>어디서올렷나</td>
+                  <td>파일</td>
+                  <td>조회수</td>
+                  <td>게시날짜</td>
+               </tr>
+               <tr>
+                  <td>게시번호</td>
+                  <td class="subject" style="padding-left:0px;">
+                     <a href="./boardView.do?post=3183572&amp;page=2&amp;boardSeq=112&amp;key=698">
+                        여기에는 장학금이름
+                     </a>
+                  </td>
+                  <td>어디서올렷나</td>
+                  <td>파일</td>
+                  <td>조회수</td>
+                  <td>게시날짜</td>
+               </tr>
+               <tr>
+                  <td>게시번호</td>
+                  <td class="subject" style="padding-left:0px;">
+                     <a href="./boardView.do?post=3183572&amp;page=2&amp;boardSeq=112&amp;key=698">
+                        여기에는 장학금이름
+                     </a>
+                  </td>
+                  <td>어디서올렷나</td>
+                  <td>파일</td>
+                  <td>조회수</td>
+                  <td>게시날짜</td>
+               </tr>
+               <tr>
+                  <td>게시번호</td>
+                  <td class="subject" style="padding-left:0px;">
+                     <a href="./boardView.do?post=3183572&amp;page=2&amp;boardSeq=112&amp;key=698">
+                        여기에는 장학금이름
+                     </a>
+                  </td>
+                  <td>어디서올렷나</td>
+                  <td>파일</td>
+                  <td>조회수</td>
+                  <td>게시날짜</td>
+               </tr><tr>
+                  <td>게시번호</td>
+                  <td class="subject" style="padding-left:0px;">
+                     <a href="./boardView.do?post=3183572&amp;page=2&amp;boardSeq=112&amp;key=698">
+                        여기에는 장학금이름
+                     </a>
+                  </td>
+                  <td>어디서올렷나</td>
+                  <td>파일</td>
+                  <td>조회수</td>
+                  <td>게시날짜</td>
+               </tr><tr>
+                  <td>게시번호</td>
+                  <td class="subject" style="padding-left:0px;">
+                     <a href="./boardView.do?post=3183572&amp;page=2&amp;boardSeq=112&amp;key=698">
+                        여기에는 장학금이름
+                     </a>
+                  </td>
+                  <td>어디서올렷나</td>
+                  <td>파일</td>
+                  <td>조회수</td>
+                  <td>게시날짜</td>
+               </tr><tr>
+                  <td>게시번호</td>
+                  <td class="subject" style="padding-left:0px;">
+                     <a href="./boardView.do?post=3183572&amp;page=2&amp;boardSeq=112&amp;key=698">
+                        여기에는 장학금이름
+                     </a>
+                  </td>
+                  <td>어디서올렷나</td>
+                  <td>파일</td>
+                  <td>조회수</td>
+                  <td>게시날짜</td>
+               </tr>
+
 
          <tr>
                   <td>게시번호</td>
@@ -248,10 +366,9 @@ td{text-align:center;line-height:300%;font-size: 0.9em;}
                </tr>
          </tbody>
          </table>
+         </div>
       </form>
-
 </div>
-
            <!-- //contents -->
            </div>
         </body>
