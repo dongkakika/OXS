@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block content %}
+        <body>
+        <div 첫번째 영역>
+            <p align="center"><span style="font-family: Jua; font-size: 2.0em">전자공학부 장학 정보</span>
+            </p>
+        </div>
+
+        <table style="margin-left: auto; margin-right: auto;" class="table table-striped" border="0" summary="공지사항_공지사항 게시물이며  제목, 작성자, 파일, 조회수, 작성일등의 정보를 제공합니다.">
+         <thead class="th list">
+         <tr class="success">
+            <th scope="col" width="100px" class="first">번호</th>
+            <th scope="col" width="600px">제목</th>
+            <th scope="col" width="180px">작성자</th>
+            <th scope="col" width="100px">파일</th>
+            <th scope="col" width="80px">조회수</th>
+            <th scope="col" width="80px" class="last">작성일</th>
+         </tr>
+         </thead>
+         <tbody class="tb">
+               <tr>
+               <td><em>공지</em></td>
+                        <td class="subject" style="padding-left:0px;">
+                              <a href="./boardView.do?post=3183756&amp;page=2&amp;boardSeq=112&amp;key=698">
+                                          (변경) 2020학년도 후기 외국인 대학원 신입생 특별장학생 선발 안내
+                              </a>
+                        </td>
+               <td>국제교류본부</td>
+                        <td>
+                                 <a href="./boardDownload.do?boardSeq=112&amp;post=3183756&amp;bdfiles=323989&amp;key=698"></a>
+                        </td>
+               <td>290</td>
+               <td>2020.04.28</td>
+               </tr>
+
+
+
+               {% for crawlingdata in crawlingdatas %}
+                <tr>
+                  <td>{{crawlingdata.id}}</td>
+                  <td class="subject" style="padding-left:0px;">
+                     {{crawlingdata.Name}}
+                  </td>
+                  <td>어디서올렷나</td>
+                  <td>파일</td>
+                  <td>조회수</td>
+                  <td>{{crawlingdata.Period}}</td>
+               </tr>
+                {% endfor %}
+
+
+
+         </tbody>
+
+         </table>
+
+        </body>
+
+{% endblock content %}
