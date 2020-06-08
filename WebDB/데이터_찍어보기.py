@@ -1,6 +1,6 @@
 import sqlite3
 
-con = sqlite3.connect("C:\\Users\\Jim\\Desktop\\Git\\OXS\\WebDB\\oxsData.db")
+con = sqlite3.connect("oxsData.db")
 
 cur = con.cursor()
 
