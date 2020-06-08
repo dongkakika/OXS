@@ -30,6 +30,9 @@ def _SW(request):
 def _JJD(request):
     return render(request, "website1/_JJD.html")
 
+def logindex(request):
+    return render(request, "website1/logindex.html")
+
 
 
 

@@ -7,6 +7,7 @@
 <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="/static/css/sub.css">
 <style>
     p.hanna{
     font-family: 'Hanna', serif;
@@ -68,6 +69,7 @@
                 </div>
             </div> <!-- /container -->
         </section>
+
         <nav class="navbar navbar-default">
             <div class="container">
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -81,12 +83,16 @@
                         <li><a href="_JJ.html"><span style="font-family: Jua; font-size: 1.3em">전자공학부</span></a></li>
                         <li><a href="_JT.html"><span style="font-family: Jua; font-size: 1.3em">정보통신공학부</span></a></li>
                         <li><a href="_COM.html"><span style="font-family: Jua; font-size: 1.3em">컴퓨터공학과</span></a></li>
-                        <li class="login"><a href="login.html">LogIn</a></li>
+                        <li class="login"><a href="logindex.html">LogIn</a></li>
                     </ul>
 
                 </div><!-- /.navbar-collapse -->
+
             </div><!-- /.container-fluid -->
-        </nav>
+            <!-- LEFT SIDEBAR -->
+
+
+
         <body>
         <div 첫번째 영역>
             <p align="center"><span style="font-family: Jua; font-size: 2.0em">충북대학교 장학 정보</span>
@@ -94,33 +100,7 @@
         </div>
         <div id="contents">
             <script type="text/javascript">
-//<![CDATA[
-   function boardDataRemove(  ) {
-      if( confirm("선택된 게시물을 삭제하시겠습니까?") ) {
-         return true;
-      }
-      return false;
-   }
 
-   function boardDataRestore( url ) {
-      if( confirm("선택된 게시물을 복원하시겠습니까?") ) {
-         window.location = url;
-      }
-   }
-
-   function checkall(obj){
-      if(obj.checked==true) {
-         for(var i = 0;i < document.chkBoxForm.chkid.length;i++) {
-            document.chkBoxForm.chkid[i].checked=true;
-         }
-      } else {
-         for(var i = 0;i < document.chkBoxForm.chkid.length;i++) {
-            document.chkBoxForm.chkid[i].checked=false;
-         }
-      }
-   }
-
-//]]>
 </script>
               <div class="board">
                     <div class="clearfix">
@@ -373,6 +353,7 @@ font-family: 'Nanum Gothic', sans-serif;
            <!-- //contents -->
            </div>
         </body>
+
    <!--Footer-->
         <footer id="footer" class="footer">
             <div class="container">
