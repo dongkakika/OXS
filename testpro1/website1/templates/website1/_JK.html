@@ -6,6 +6,112 @@
             <p align="center"><span style="font-family: Jua; font-size: 2.0em">전기공학부 장학 정보</span>
             </p>
         </div>
+        <div id="contents">
+            <script type="text/javascript">
+
+</script>
+              <div class="board">
+                    <div class="clearfix">
+                       <div class="left">
+                       </div>
+                       <div class="right">
+                     <p style="text-align:right;"><span style="font-family: Jua; font-size: 1.5em; line-height:300%;">
+                        <div style = "padding: 0px 0px 0px 300px;">
+                        <span class="board_dot small">[ 총 게시물  12613 개 ]</span></span></p>
+                  </div>
+                     </span>
+                       </div>
+             </div>
+      <form name="chkBoxForm" method="post" action="./selectDelete.do" onsubmit="return boardDataRemove()">
+         <input type="hidden" name="boardSeq" value="112">
+         <input type="hidden" name="key" value="698">
+         <input type="hidden" name="page" value="2">
+         <input type="hidden" name="category" value="">
+         <input type="hidden" name="searchCn" value="">
+         <input type="hidden" name="searchCo" value="">
+         <input type="hidden" name="searchCc" value="">
+         <input type="hidden" name="searchTerm" value="">
+         <input type="hidden" name="searchType" value="">
+         <input type="hidden" name="searchKeyword" value="">
+         <input type="hidden" name="MemberTYPE" value="">
+<style>
+table tr, th, td{
+text-align:center;
+line-height:300%;
+font-size: 1.0em;
+font-family: 'Nanum Gothic', sans-serif;
+}
+</style>
+         <div style = "padding: 0px 300px 0px 300px;">
+         <table style="margin-left: auto; margin-right: auto;" class="table table-striped" border="0" summary="공지사항_공지사항 게시물이며  제목, 작성자, 파일, 조회수, 작성일등의 정보를 제공합니다.">
+
+         <thead class="th list">
+         <tr class="success">
+            <th scope="col" width="100px" class="first">번호</th>
+            <th scope="col" width="700px">제목</th>
+            <th scope="col" width="180px">작성자</th>
+            <th scope="col" width="80px">조회수</th>
+            <th scope="col" width="80px" class="last">작성일</th>
+         </tr>
+         </thead>
+         <tbody class="tb">
+               <tr>
+               <td><em>공지</em></td>
+                        <td class="subject" style="padding-left:0px;">
+                              <a href="./boardView.do?post=3183756&amp;page=2&amp;boardSeq=112&amp;key=698">
+                                          (변경) 2020학년도 후기 외국인 대학원 신입생 특별장학생 선발 안내
+                              </a>
+                        </td>
+               <td>국제교류본부</td>
+               <td>290</td>
+               <td>2020.04.28</td>
+               </tr>
+
+               <tr>
+                  <td>12594</td>
+                  <td class="subject" style="padding-left:0px;">
+                     <a href="./boardView.do?post=3183572&amp;page=2&amp;boardSeq=112&amp;key=698">
+                        ★ [코로나 19 공지] 2020-1학기 재택(비대면)수업 연장 안내
+                     </a>
+                  </td>
+                  <td>학사지원과</td>
+                  <td>18895</td>
+                  <td>2020.04.20</td>
+               </tr>
+
+                 <tr>
+                  <td>게시번호</td>
+                  <td class="subject" style="padding-left:0px;">
+                     <a href="./boardView.do?post=3183572&amp;page=2&amp;boardSeq=112&amp;key=698">
+                        여기에는 장학금이름
+                     </a>
+                  </td>
+                  <td>어디서올렷나</td>
+                  <td>조회수</td>
+                  <td>게시날짜</td>
+               </tr>
+
+
+         {% for crawlingdata in crawlingdatas %}
+                <tr>
+                  <td>{{crawlingdata.id}</td>
+                  <td class="subject" style="padding-left:0px;">
+                     {{crawlingdata.Name}}
+                  </td>
+                  <td>어디서올렷나</td>
+                  <td>조회수</td>
+                  <td>{{crawlingdata.Period}}</td>
+               </tr>
+                {% endfor %}
+
+
+         </tbody>
+         </table>
+         </div>
+      </form>
+</div>
+           <!-- //contents -->
+           </div>
         </body>
 
 {% endblock content %}

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
@@ -8,12 +9,8 @@
 <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Jua&display=swap" rel="stylesheet">
 <style>
-    p.hanna{
-    font-family: 'Hanna', serif;
-    }
-    p.gothic{
-    font-family: 'Nanum Gothic', sans-serif;
-    }
+    p.hanna{font-family: 'Hanna', serif;}
+    p.gothic{font-family: 'Nanum Gothic', sans-serif;}
     p.do{font-family: 'Do Hyeon', sans-serif;}
     p.jua{font-family: 'Jua', sans-serif;}
 </style>
@@ -39,7 +36,7 @@
         <!--Theme Responsive css-->
         <link rel="stylesheet" href="/static/css/responsive.css" />
 
-        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <script src="/static/js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -85,18 +82,17 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 
-                    <ul class="nav navbar-nav navbar-right">
+                     <ul class="nav navbar-nav navbar-right">
                         <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="_CBNU.html"><span style="font-family: Jua; font-size: 1.5em">충북대학교</span></a></li>
-                        <li><a href="_JJD.html"><span style="font-family: Jua; font-size: 1.5em">전자정보대학</span></a></li>
-                        <li><a href="_SW.html"><span style="font-family: Jua; font-size: 1.5em">소프트웨어학과</span></a></li>
-                        <li><a href="_JK.html"><span style="font-family: Jua; font-size: 1.5em">전기공학부</span></a></li>
-                        <li><a href="_JJ.html"><span style="font-family: Jua; font-size: 1.5em">전자공학부</span></a></li>
-                        <li><a href="_JT.html"><span style="font-family: Jua; font-size: 1.5em">정보통신공학부</span></a></li>
-                        <li><a href="_COM.html"><span style="font-family: Jua; font-size: 1.5em">컴퓨터공학과</span></a></li>
+                        <li><a href="_CBNU.html"><span style="font-family: Poor Story; font-size: 1.2em">충북대학교</span></a></li>
+                        <li><a href="_JJD.html"><span style="font-family: Poor Story; color:green; font-size: 1.2em">전자정보대학</span></a></li>
+                        <li><a href="_SW.html"><span style="font-family: Poor Story; font-size: 1.2em">소프트웨어학과</span></a></li>
+                        <li><a href="_JK.html"><span style="font-family: Poor Story; color:green; font-size: 1.2em">전기공학부</span></a></li>
+                        <li><a href="_JJ.html"><span style="font-family: Poor Story; font-size: 1.2em">전자공학부</span></a></li>
+                        <li><a href="_JT.html"><span style="font-family: Poor Story; color:green; font-size: 1.2em">정보통신공학부</span></a></li>
+                        <li><a href="_COM.html"><span style="font-family: Poor Story; font-size: 1.2em">컴퓨터공학과</span></a></li>
                         <li class="login"><a href="log.html">LogIn</a></li>
                     </ul>
-
                 </div><!-- /.navbar-collapse -->
             </div><!-- /.container-fluid -->
         </nav>
@@ -130,7 +126,7 @@
             </div>
         </footer>
 
-   <script src="/static/js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="/static/js/vendor/jquery-1.11.2.min.js"></script>
         <script src="/static/js/vendor/bootstrap.min.js"></script>
 
         <script src="/static/js/plugins.js"></script>

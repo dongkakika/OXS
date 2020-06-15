@@ -10,11 +10,16 @@ from .models import Crawlingdata
 def index(request):
     return render(request,'website1/index.html')
 
+
 def _CBNU(request):
-    return render(request, "website1/_CBNU.html")
+    crawlingdatas = Crawlingdata.objects.all()
+    context = {'crawlingdatas': crawlingdatas}
+    return render(request, "website1/_CBNU.html", context)
 
 def _COM(request):
-    return render(request, "website1/_COM.html")
+    crawlingdatas = Crawlingdata.objects.all()
+    context = {'crawlingdatas': crawlingdatas}
+    return render(request, "website1/_COM.html", context)
 
 def _JJ(request):
     crawlingdatas = Crawlingdata.objects.all()
@@ -22,19 +27,29 @@ def _JJ(request):
     return render(request, "website1/_JJ.html", context)
 
 def _JK(request):
-    return render(request, "website1/_JK.html")
+    crawlingdatas = Crawlingdata.objects.all()
+    context = {'crawlingdatas': crawlingdatas}
+    return render(request, "website1/_JK.html", context)
 
 def _JT(request):
-    return render(request, "website1/_JT.html")
+    crawlingdatas = Crawlingdata.objects.all()
+    context = {'crawlingdatas': crawlingdatas}
+    return render(request, "website1/_JT.html", context)
 
 def _SW(request):
-    return render(request, "website1/_SW.html")
+    crawlingdatas = Crawlingdata.objects.all()
+    context = {'crawlingdatas': crawlingdatas}
+    return render(request, "website1/_SW.html", context)
 
 def _JJD(request):
-    return render(request, "website1/_JJD.html")
+    crawlingdatas = Crawlingdata.objects.all()
+    context = {'crawlingdatas': crawlingdatas}
+    return render(request, "website1/_JJD.html", context)
 
 def log(request):
-    return render(request, "website1/log.html")
+    return render(request, "website1/log.html", context)
+
+
 
 
 

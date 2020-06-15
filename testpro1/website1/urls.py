@@ -18,6 +18,6 @@ urlpatterns=[
     url(r'_SW.html/$', views._SW),
     url(r'_JK.html/$', views._JK),
     url(r'_JT.html/$', views._JT),
-    url(r'log.html/$', views.log)
+    url(r'log.html/$', views.log),
 
 ]

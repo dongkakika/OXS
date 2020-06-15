@@ -1689,35 +1689,4 @@ xkeyframes
 
 }
 
-/* 여기서 부터 새로 추가 */
-.wrap {
-    width: 780px;
-    font-size:0.75em;
-}
-.sidebar {
-    width: 200px;
-    float:left;
-}
-.footer {
-    clear: both;
-}
 
-
-
-div {
-    padding: 20px 0;
-    text-align:center;
-}
-.header {
-    background-color: #ccc;
-}
-.sidebar {
-    background-color: #ddd;
-    text-align: left;
-}
-.content {
-    background-color: #eee;
-}
-.footer {
-    background-color: #ccc; 
-}
