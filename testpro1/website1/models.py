@@ -9,8 +9,20 @@ class UserInfo(models.Model):
     userid=models.CharField(max_length=20)
     userpw=models.CharField(max_length=20)
 
-class Crawlingdata(models.Model):
-    Name = models.CharField(max_length=30)
-    Period = models.CharField(max_length=50)
+class sw_info(models.Model):
+    Name = models.CharField(max_length=50)
+    Date = models.CharField(max_length=15)
+    View = models.CharField(max_length=30)
+    Href = models.CharField(max_length=300)
 
+class com_info(models.Model):
+    Name = models.CharField(max_length=50)
+    Date = models.CharField(max_length=15)
+    View = models.CharField(max_length=30)
+    Href = models.CharField(max_length=300)
 
+class jj_info(models.Model):
+    Name = models.CharField(max_length=50)
+    Date = models.CharField(max_length=15)
+    View = models.CharField(max_length=30)
+    Href = models.CharField(max_length=300)

@@ -3,7 +3,7 @@ from .models import UserInfo
 from django.views.generic import View
 from django.http import HttpResponse
 from django.http import HttpResponseRedirect
-from .models import Crawlingdata
+from .models import *
 
 # Create your views here.
 
@@ -12,45 +12,34 @@ def index(request):
 
 
 def _CBNU(request):
-    crawlingdatas = Crawlingdata.objects.all()
-    context = {'crawlingdatas': crawlingdatas}
-    return render(request, "website1/_CBNU.html", context)
+    return render(request, "website1/_CBNU.html")
 
 def _COM(request):
-    crawlingdatas = Crawlingdata.objects.all()
-    context = {'crawlingdatas': crawlingdatas}
+    com_infos = com_info.objects.all()
+    context = {'com_infos': com_infos}
     return render(request, "website1/_COM.html", context)
 
 def _JJ(request):
-    crawlingdatas = Crawlingdata.objects.all()
-    context = {'crawlingdatas':crawlingdatas}
+    jj_infos = jj_info.objects.all()
+    context = {'jj_infos': jj_infos}
     return render(request, "website1/_JJ.html", context)
 
 def _JK(request):
-    crawlingdatas = Crawlingdata.objects.all()
-    context = {'crawlingdatas': crawlingdatas}
-    return render(request, "website1/_JK.html", context)
+    return render(request, "website1/_JK.html")
 
 def _JT(request):
-    crawlingdatas = Crawlingdata.objects.all()
-    context = {'crawlingdatas': crawlingdatas}
-    return render(request, "website1/_JT.html", context)
+    return render(request, "website1/_JT.html")
 
 def _SW(request):
-    crawlingdatas = Crawlingdata.objects.all()
-    context = {'crawlingdatas': crawlingdatas}
+    sw_infos = sw_info.objects.all()
+    context = {'sw_infos': sw_infos}
     return render(request, "website1/_SW.html", context)
 
 def _JJD(request):
-    crawlingdatas = Crawlingdata.objects.all()
-    context = {'crawlingdatas': crawlingdatas}
-    return render(request, "website1/_JJD.html", context)
+    return render(request, "website1/_JJD.html")
 
 def log(request):
-    return render(request, "website1/log.html", context)
-
-
-
+    return render(request, "website1/log.html")
 
 
 
