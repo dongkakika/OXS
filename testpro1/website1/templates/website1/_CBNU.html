@@ -36,8 +36,8 @@ font-family: 'Nanum Gothic', sans-serif;
          <thead class="th list">
         <tr bgcolor="mistyrose">
             <th scope="col" width="100px" class="first">번호</th>
-            <th scope="col" width="700px">제목</th>
-            <th scope="col" width="250px">작성자</th>
+            <th scope="col" width="650px">제목</th>
+            <th scope="col" width="200px">작성자</th>
             <th scope="col" width="80px">조회수</th>
             <th scope="col" width="100px" class="last">작성일</th>
          </tr>
@@ -47,8 +47,8 @@ font-family: 'Nanum Gothic', sans-serif;
                  <tr>
                   <td>{{cbnu_info.id}}</td>
                   <td class="subject" style="padding-left:0px;">
-                     <a href={{cbnu_info.Href}}>
-                        <span style="color:red">{{cbnu_info.Name}} </span>
+                     <a href={{cbnu_info.Href}} target="_blank">
+                        {{cbnu_info.Name}}
                      </a>
                   </td>
                   <td>충북대학교</td>

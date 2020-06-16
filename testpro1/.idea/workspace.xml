@@ -3,12 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="dec6deef-28ba-4937-bc88-54be528a3183" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Crawler_CBNU.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crawler_CBNU.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deleteFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/deleteFile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/website1/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website1/templates/website1/_CBNU.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/templates/website1/_CBNU.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/website1/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/templates/website1/_COM.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/templates/website1/_COM.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/templates/website1/_JJ.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/templates/website1/_JJ.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/templates/website1/_JJD.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/templates/website1/_JJD.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/templates/website1/_JK.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/templates/website1/_JK.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/templates/website1/_JT.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/templates/website1/_JT.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/templates/website1/_SW.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/templates/website1/_SW.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/templates/website1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/templates/website1/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/templates/website1/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/templates/website1/layout.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +45,17 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592315564342">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="137" y="18" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1592315564342" />
     <state x="712" y="320" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1592311446556">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="712" y="320" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1592311446556" />
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2" timestamp="1592315546474">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="96" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1592315546474" />
   </component>
 </project>
