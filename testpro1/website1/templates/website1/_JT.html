@@ -15,10 +15,7 @@
                        <div class="left">
                        </div>
                        <div class="right">
-                     <p style="text-align:right;"><span style="font-family: Jua; font-size: 1.5em; line-height:300%;">
-                        <div style = "padding: 0px 0px 0px 300px;">
-                        <span class="board_dot small">[ 총 게시물  12613 개 ]</span></span></p>
-                  </div>
+                       </div>
                      </span>
                        </div>
              </div>
@@ -55,54 +52,19 @@ font-family: 'Nanum Gothic', sans-serif;
          </tr>
          </thead>
          <tbody class="tb">
-               <tr>
-               <td><em>공지</em></td>
-                        <td class="subject" style="padding-left:0px;">
-                              <a href="./boardView.do?post=3183756&amp;page=2&amp;boardSeq=112&amp;key=698">
-                                          (변경) 2020학년도 후기 외국인 대학원 신입생 특별장학생 선발 안내
-                              </a>
-                        </td>
-               <td>국제교류본부</td>
-               <td>290</td>
-               <td>2020.04.28</td>
-               </tr>
-
-               <tr>
-                  <td>12594</td>
-                  <td class="subject" style="padding-left:0px;">
-                     <a href="./boardView.do?post=3183572&amp;page=2&amp;boardSeq=112&amp;key=698">
-                        ★ [코로나 19 공지] 2020-1학기 재택(비대면)수업 연장 안내
-                     </a>
-                  </td>
-                  <td>학사지원과</td>
-                  <td>18895</td>
-                  <td>2020.04.20</td>
-               </tr>
-
+               {% for jt_info in jt_infos %}
                  <tr>
-                  <td>게시번호</td>
+                  <td>{{jt.info.id}}</td>
                   <td class="subject" style="padding-left:0px;">
-                     <a href="./boardView.do?post=3183572&amp;page=2&amp;boardSeq=112&amp;key=698">
-                        여기에는 장학금이름
+                     <a href={{jt_info.Href}} target="_blank">
+                     {{jt_info.Name}}
                      </a>
                   </td>
-                  <td>어디서올렷나</td>
-                  <td>조회수</td>
-                  <td>게시날짜</td>
+                  <td>정보통신공학부</td>
+                  <td>{{jt_info.View}}</td>
+                  <td>{{jt_info.Date}}</td>
                </tr>
-
-
-         {% for crawlingdata in crawlingdatas %}
-                <tr>
-                  <td>{{crawlingdata.id}</td>
-                  <td class="subject" style="padding-left:0px;">
-                     {{crawlingdata.Name}}
-                  </td>
-                  <td>어디서올렷나</td>
-                  <td>조회수</td>
-                  <td>{{crawlingdata.Period}}</td>
-               </tr>
-                {% endfor %}
+         {% endfor %}
 
 
          </tbody>

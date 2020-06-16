@@ -32,3 +32,21 @@ class cbnu_info(models.Model):
     Date = models.CharField(max_length=15)
     View = models.CharField(max_length=30)
     Href = models.CharField(max_length=300)
+
+class jt_info(models.Model):
+    Name = models.CharField(max_length=50)
+    Date = models.CharField(max_length=15)
+    View = models.CharField(max_length=30)
+    Href = models.CharField(max_length=300)
+
+class jk_info(models.Model):
+    Name = models.CharField(max_length=50)
+    Date = models.CharField(max_length=15)
+    View = models.CharField(max_length=30)
+    Href = models.CharField(max_length=300)
+
+class jjd_info(models.Model):
+    Name = models.CharField(max_length=50)
+    Date = models.CharField(max_length=15)
+    View = models.CharField(max_length=30)
+    Href = models.CharField(max_length=300)

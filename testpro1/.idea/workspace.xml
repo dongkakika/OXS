@@ -3,15 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="dec6deef-28ba-4937-bc88-54be528a3183" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/templates/website1/_CBNU.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/templates/website1/_CBNU.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/templates/website1/_COM.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/templates/website1/_COM.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/templates/website1/_JJ.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/templates/website1/_JJ.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/website1/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website1/templates/website1/_JJD.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/templates/website1/_JJD.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website1/templates/website1/_JK.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/templates/website1/_JK.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/website1/templates/website1/_JT.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/templates/website1/_JT.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/templates/website1/_SW.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/templates/website1/_SW.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/templates/website1/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/templates/website1/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/website1/templates/website1/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/website1/templates/website1/layout.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/website1/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/website1/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

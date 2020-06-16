@@ -27,10 +27,14 @@ def _JJ(request):
     return render(request, "website1/_JJ.html", context)
 
 def _JK(request):
-    return render(request, "website1/_JK.html")
+    jk_infos = jk_info.objects.all()
+    context = {'jk_infos': jk_infos}
+    return render(request, "website1/_JK.html", context)
 
 def _JT(request):
-    return render(request, "website1/_JT.html")
+    jt_infos = jt_info.objects.all()
+    context = {'jt_infos': jt_infos}
+    return render(request, "website1/_JT.html", context)
 
 def _SW(request):
     sw_infos = sw_info.objects.all()
@@ -38,7 +42,9 @@ def _SW(request):
     return render(request, "website1/_SW.html", context)
 
 def _JJD(request):
-    return render(request, "website1/_JJD.html")
+    jjd_infos = jjd_info.objects.all()
+    context = {'jjd_infos': jjd_infos}
+    return render(request, "website1/_JJD.html", context)
 
 def log(request):
     return render(request, "website1/log.html")
