@@ -12,7 +12,9 @@ def index(request):
 
 
 def _CBNU(request):
-    return render(request, "website1/_CBNU.html")
+    cbnu_infos = cbnu_info.objects.all()
+    context = {'cbnu_infos': cbnu_infos}
+    return render(request, "website1/_CBNU.html", context)
 
 def _COM(request):
     com_infos = com_info.objects.all()

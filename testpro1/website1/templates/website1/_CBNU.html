@@ -3,7 +3,7 @@
 {% block content %}
         <body>
         <div 첫번째 영역>
-            <p align="center"><span style="font-family: Jua; font-size: 2.0em">소프트웨어학과 장학 정보</span>
+            <p align="center"><span style="font-family: Jua; font-size: 2.0em">충북대학교 장학 정보</span>
             </p>
         </div>
         <div id="contents">
@@ -57,54 +57,19 @@ font-family: 'Nanum Gothic', sans-serif;
          </tr>
          </thead>
          <tbody class="tb">
-               <tr>
-               <td><em>공지</em></td>
-                        <td class="subject" style="padding-left:0px;">
-                              <a href="./boardView.do?post=3183756&amp;page=2&amp;boardSeq=112&amp;key=698">
-                                          (변경) 2020학년도 후기 외국인 대학원 신입생 특별장학생 선발 안내
-                              </a>
-                        </td>
-               <td>국제교류본부</td>
-               <td>290</td>
-               <td>2020.04.28</td>
-               </tr>
-
-               <tr>
-                  <td>12594</td>
-                  <td class="subject" style="padding-left:0px;">
-                     <a href="./boardView.do?post=3183572&amp;page=2&amp;boardSeq=112&amp;key=698">
-                        ★ [코로나 19 공지] 2020-1학기 재택(비대면)수업 연장 안내
-                     </a>
-                  </td>
-                  <td>학사지원과</td>
-                  <td>18895</td>
-                  <td>2020.04.20</td>
-               </tr>
-
+         {% for cbnu_info in cbnu_infos %}
                  <tr>
-                  <td>게시번호</td>
+                  <td>{{cbnu_info.id}}</td>
                   <td class="subject" style="padding-left:0px;">
-                     <a href="./boardView.do?post=3183572&amp;page=2&amp;boardSeq=112&amp;key=698">
-                        여기에는 장학금이름
+                     <a href={{cbnu_info.Href}}>
+                        <span style="color:red">{{cbnu_info.Name}} </span>
                      </a>
                   </td>
-                  <td>어디서올렷나</td>
-                  <td>조회수</td>
-                  <td>게시날짜</td>
+                  <td>충북대학교</td>
+                  <td>{{cbnu_info.View}}</td>
+                  <td>{{cbnu_info.Date}}</td>
                </tr>
-
-
-         {% for crawlingdata in crawlingdatas %}
-                <tr>
-                  <td>{{crawlingdata.id}</td>
-                  <td class="subject" style="padding-left:0px;">
-                     {{crawlingdata.Name}}
-                  </td>
-                  <td>어디서올렷나</td>
-                  <td>조회수</td>
-                  <td>{{crawlingdata.Period}}</td>
-               </tr>
-                {% endfor %}
+         {% endfor %}
 
 
          </tbody>
