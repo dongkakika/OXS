@@ -16,24 +16,10 @@
                        </div>
                        <div class="right">
                            <p style="text-align:right;"></p>
-                            <div style = "padding: 0px 0px 0px 300px;"><span style="font-family: Jua; font-size: 1.5em; line-height:300%;"></span>
-                            <span class="board_dot small">[ 총 게시물  12613 개 ]</span>
                             </div>
                        </div>
                     </div>
              </div>
-      <form name="chkBoxForm" method="post" action="./selectDelete.do" onsubmit="return boardDataRemove()">
-         <input type="hidden" name="boardSeq" value="112">
-         <input type="hidden" name="key" value="698">
-         <input type="hidden" name="page" value="2">
-         <input type="hidden" name="category" value="">
-         <input type="hidden" name="searchCn" value="">
-         <input type="hidden" name="searchCo" value="">
-         <input type="hidden" name="searchCc" value="">
-         <input type="hidden" name="searchTerm" value="">
-         <input type="hidden" name="searchType" value="">
-         <input type="hidden" name="searchKeyword" value="">
-         <input type="hidden" name="MemberTYPE" value="">
 <style>
 table tr, th, td{
 text-align:center;
@@ -60,7 +46,7 @@ font-family: 'Nanum Gothic', sans-serif;
                   <td>{{sw_info.id}}</td>
                   <td class="subject" style="padding-left:0px;">
                      <a href={{sw_info.Href}}>
-                        <span style="color:red">{{sw_info.Name}} </span>
+                        {{sw_info.Name}}
                      </a>
                   </td>
                   <td>소프트웨어학과</td>
