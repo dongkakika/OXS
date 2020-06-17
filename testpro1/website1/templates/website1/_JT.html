@@ -3,20 +3,20 @@
 {% block content %}
         <body>
         <div 첫번째 영역>
-            <p align="center"><span style="font-family: Jua; font-size: 2.0em">정보통신공학부 장학 정보</span>
+            <p align="center"><span style="font-family: Jua; font-size: 2.0em"><정보통신공학부 장학 정보></span>
             </p>
         </div>
         <div id="contents">
             <script type="text/javascript">
 
 </script>
-              <div class="board">
+               <div class="board">
                     <div class="clearfix">
-                       <div class="left">
-                       </div>
+                       <div class="left"></div>
                        <div class="right">
-                       </div>
-                     </span>
+                     <p style="text-align:right;"><span style="font-family: Jua; font-size: 1.5em; line-height:300%;">
+                        <div style = "padding: 0px 0px 0px 300px;">
+                  </div>
                        </div>
              </div>
       <form name="chkBoxForm" method="post" action="./selectDelete.do" onsubmit="return boardDataRemove()">
@@ -39,22 +39,23 @@ font-size: 1.0em;
 font-family: 'Nanum Gothic', sans-serif;
 }
 </style>
-         <div style = "padding: 0px 300px 0px 300px;">
+         <div style = "padding: 0px 200px 0px 200px;">
+
          <table style="margin-left: auto; margin-right: auto;" class="table table-striped" border="0" summary="공지사항_공지사항 게시물이며  제목, 작성자, 파일, 조회수, 작성일등의 정보를 제공합니다.">
 
          <thead class="th list">
-         <tr bgcolor="mistyrose">
-            <th scope="col" width="100px" class="first">번호</th>
-            <th scope="col" width="650px">제목</th>
-            <th scope="col" width="200px">작성자</th>
-            <th scope="col" width="80px">조회수</th>
-            <th scope="col" width="100px" class="last">작성일</th>
+        <tr bgcolor="mistyrose">
+           <th scope="col" width="100px" class="first">번호</th>
+            <th scope="col" width="1500px">제목</th>
+            <th scope="col" width="300px">작성자</th>
+            <th scope="col" width="100px">조회수</th>
+            <th scope="col" width="250px" class="last">작성일</th>
          </tr>
          </thead>
          <tbody class="tb">
                {% for jt_info in jt_infos %}
                  <tr>
-                  <td>{{jt.info.id}}</td>
+                  <td>{{jt_info.id}}</td>
                   <td class="subject" style="padding-left:0px;">
                      <a href={{jt_info.Href}} target="_blank">
                      {{jt_info.Name}}
