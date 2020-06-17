@@ -1,0 +1,18 @@
+## you should know that 'Automatic_operator' makes this project automatically !
+## every 30 mins. !
+
+
+
+[ * python requirements * ]
+1. selenium should be installed !
+	- ' Crawler_JT.py ' acts on selenium, so it takes more time than the other Crawlers
+	- ' Crawler_JK.py ' acts on selenium, so it takes more time than the other Crawlers
+2. requests should be installed !
+3. beautifulsoup4 should be installed !
+4. lxml should be installed !
+5. html.parcer should be installed !
+6. The version of chromedriver is for Chrome 83.ver
+
+
+
+----- by OXS team -----
