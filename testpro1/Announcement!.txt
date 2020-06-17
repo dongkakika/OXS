@@ -1,4 +1,4 @@
-## you should know that 'Automatic_operator' makes this project automatically !
+## you should know that 'Automatic_operator' makes this project work automatically !
 ## every 30 mins. !
 
 
